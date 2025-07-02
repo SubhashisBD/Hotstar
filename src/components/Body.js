@@ -6,14 +6,10 @@ import SecondaryContainer from "./SecondaryContainer";
 const Body = () => {
     return (
         <div>
-            <div>
-              <SideBar/>
-            </div>
-            <div>
-                <MainContainer/>
-                <SecondaryContainer/>
-            </div>
+            <MainContainer />
+            <SecondaryContainer />
         </div>
+
     )
 }
 
