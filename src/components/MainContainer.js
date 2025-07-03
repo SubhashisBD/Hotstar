@@ -1,4 +1,5 @@
 
+import useDummyyApi from "../hooks/useDummyyApi";
 import useGetNowPlaying from "../hooks/useGetNowPlaying";
 import useGetPopular from "../hooks/useGetPopular";
 import useGetTopRated from "../hooks/useGetTopRated";
@@ -13,10 +14,11 @@ const MainContainer = () => {
     useGetTopRated();
     useGetPopular();
     useGetNowPlaying();
+    useDummyyApi();
 
     return (
         <div className="scroll">
-            <div className="relative">
+            <div className="relative h-screen">
                 <VideoBackground />
                 <SideBar />
                 <VideoTitle />

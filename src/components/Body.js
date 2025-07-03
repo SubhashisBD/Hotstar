@@ -5,9 +5,13 @@ import SecondaryContainer from "./SecondaryContainer";
 
 const Body = () => {
     return (
-        <div>
-            <MainContainer />
-            <SecondaryContainer />
+        <div >
+            <div className="relative">
+                <MainContainer />
+            </div>
+            <div className=" relative">
+                <SecondaryContainer />
+            </div>
         </div>
 
     )
