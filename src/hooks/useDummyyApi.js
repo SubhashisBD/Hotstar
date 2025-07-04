@@ -10,7 +10,7 @@ const useDummyyApi = () => {
 
         const data = await url.json();
 
-        console.log(data)
+        console.log(data.items)
     }
     useEffect(() => {
         getApi();
