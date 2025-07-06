@@ -1,8 +1,12 @@
 
-import useDummyyApi from "../hooks/useDummyyApi";
+import useCricket from "../hooks/useCricket";
+import useGetAiringToday from "../hooks/useGetAiringToday";
 import useGetNowPlaying from "../hooks/useGetNowPlaying";
+import useGetOnTheAir from "../hooks/useGetOnTheAir";
 import useGetPopular from "../hooks/useGetPopular";
+import useGetPopularTv from "../hooks/useGetPopularTv";
 import useGetTopRated from "../hooks/useGetTopRated";
+import useGetTopRatedTv from "../hooks/useGetTopRatedTv";
 import useGetUpcoming from "../hooks/useGetUpcoming";
 import SideBar from "./SideBar";
 import VideoBackground from "./VideoBackground";
@@ -14,7 +18,11 @@ const MainContainer = () => {
     useGetTopRated();
     useGetPopular();
     useGetNowPlaying();
-    useDummyyApi();
+    useCricket();
+    useGetAiringToday();
+    useGetPopularTv();
+    useGetTopRatedTv();
+    useGetOnTheAir();
 
     return (
         <div className="scroll">
