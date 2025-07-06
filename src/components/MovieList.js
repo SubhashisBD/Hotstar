@@ -1,6 +1,4 @@
-import React from 'react'
 import MovieCard from "./MovieCard";
-
 
 const MovieList = ({ title, movies }) => {
 
@@ -12,7 +10,6 @@ const MovieList = ({ title, movies }) => {
             <div className="flex gap-4 w-full overflow-x-auto scroll">
                 {movies?.map((movies) => <MovieCard key={movies.id} poster_path={movies.poster_path} />)}
             </div>
-
         </div>
     )
 }
