@@ -7,3 +7,5 @@ export const API_OPTION = {
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300/";
+
+export const YOUTUBE_KEY = process.env.REACT_APP_YOUTUBE_KEY;
